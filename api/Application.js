@@ -1,86 +1,86 @@
-function Application(){
-    this.activateEngine = function(){};
+function Application(){}
 
-    /**
-     * @param {function} callable
-     */
-    this.addHasActiveEngineObserver = function(callable){};
+Application.prototype.activateEngine = function(){};
 
-    /**
-     * @param {function} callable
-     * @param {int} maxChars
-     * @param {string} fallbackText
-     */
-    this.addSelectedModeObserver = function(callable, maxChars, fallbackText){};
+/**
+ * @param {function} callable
+ */
+Application.prototype.addHasActiveEngineObserver = function(callable){};
 
-    this.arrowKeyDown = function(){};
+/**
+ * @param {function} callable
+ * @param {int} maxChars
+ * @param {string} fallbackText
+ */
+Application.prototype.addSelectedModeObserver = function(callable, maxChars, fallbackText){};
 
-    this.arrowKeyLeft = function(){};
+Application.prototype.arrowKeyDown = function(){};
 
-    this.arrowKeyRight = function(){};
+Application.prototype.arrowKeyLeft = function(){};
 
-    this.arrowKeyUp = function(){};
+Application.prototype.arrowKeyRight = function(){};
 
-    this.copy = function(){};
+Application.prototype.arrowKeyUp = function(){};
 
-    this.cut = function(){};
+Application.prototype.copy = function(){};
 
-    this.deactivateEngine = function(){};
+Application.prototype.cut = function(){};
 
-    this.delete = function(){};
+Application.prototype.deactivateEngine = function(){};
 
-    this.duplicate = function(){};
+Application.prototype.delete = function(){};
 
-    this.enter = function(){};
+Application.prototype.duplicate = function(){};
 
-    this.escape = function(){};
+Application.prototype.enter = function(){};
 
-    this.focusPanelAbove = function(){};
+Application.prototype.escape = function(){};
 
-    this.focusPanelBelow = function(){};
+Application.prototype.focusPanelAbove = function(){};
 
-    this.focusPanelToLeft = function(){};
+Application.prototype.focusPanelBelow = function(){};
 
-    this.focusPanelToRight = function(){};
+Application.prototype.focusPanelToLeft = function(){};
 
-    this.nextPerspective = function(){};
+Application.prototype.focusPanelToRight = function(){};
 
-    this.paste = function(){};
+Application.prototype.nextPerspective = function(){};
 
-    this.previousPerspective = function(){};
+Application.prototype.paste = function(){};
 
-    this.redo = function(){};
+Application.prototype.previousPerspective = function(){};
 
-    this.rename = function(){};
+Application.prototype.redo = function(){};
 
-    this.selectAll = function(){};
+Application.prototype.rename = function(){};
 
-    this.selectNone = function(){};
+Application.prototype.selectAll = function(){};
 
-    /**
-     * @param {string} perspective
-     */
-    this.setPerspective = function(perspective){};
+Application.prototype.selectNone = function(){};
 
-    this.toggleAutomationEditor = function(){};
+/**
+ * @param {string} perspective
+ */
+Application.prototype.setPerspective = function(perspective){};
 
-    this.toggleBrowserVisibility = function(){};
+Application.prototype.toggleAutomationEditor = function(){};
 
-    this.toggleDevices = function(){};
+Application.prototype.toggleBrowserVisibility = function(){};
 
-    this.toggleFullScreen = function(){};
+Application.prototype.toggleDevices = function(){};
 
-    this.toggleMixer = function(){};
+Application.prototype.toggleFullScreen = function(){};
 
-    this.toggleNoteEditor = function(){};
+Application.prototype.toggleMixer = function(){};
 
-    this.undo = function(){};
+Application.prototype.toggleNoteEditor = function(){};
 
-    this.zoomIn = function(){};
+Application.prototype.undo = function(){};
 
-    this.zoomOut = function(){};
+Application.prototype.zoomIn = function(){};
 
-    this.zoomToFit = function(){};
+Application.prototype.zoomOut = function(){};
 
-    this.zoomToSelection = function(){};
-}
+Application.prototype.zoomToFit = function(){};
+
+Application.prototype.zoomToSelection = function(){};

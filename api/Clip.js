@@ -1,105 +1,105 @@
-function Clip(){
-    /**
-     * @param {function} callback
-     */
-    this.addCanScrollKeysDownObserver = function(callback){};
+function Clip(){}
 
-    /**
-     * @param {function} callback
-     */
-    this.addCanScrollKeysUpObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Clip.prototype.addCanScrollKeysDownObserver = function(callback){};
 
-    /**
-     * @param {function} callback
-     */
-    this.addCanScrollStepsBackwardsObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Clip.prototype.addCanScrollKeysUpObserver = function(callback){};
 
-    /**
-     * @param {function} callback
-     */
-    this.addCanScrollStepsForwardObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Clip.prototype.addCanScrollStepsBackwardsObserver = function(callback){};
 
-    /**
-     * @param {function} callback
-     */
-    this.addPlayingStepObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Clip.prototype.addCanScrollStepsForwardObserver = function(callback){};
 
-    /**
-     * @param {function} callback
-     */
-    this.addStepDataObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Clip.prototype.addPlayingStepObserver = function(callback){};
 
-    /**
-     * @param {int} x
-     * @param {int} y
-     */
-    this.clearStep = function(x, y){};
+/**
+ * @param {function} callback
+ */
+Clip.prototype.addStepDataObserver = function(callback){};
 
-    /**
-     * @returns RangedValue
-     */
-    this.getAccent = function(){};
+/**
+ * @param {int} x
+ * @param {int} y
+ */
+Clip.prototype.clearStep = function(x, y){};
 
-    /**
-     * @returns BooleanValue
-     */
-    this.getShuffle = function(){};
-    
-    this.scrollKeysPageDown = function(){};
-    
-    this.scrollKeysPageUp = function(){};
-    
-    this.scrollKeysStepDown = function(){};
-    
-    this.scrollKeysStepUp = function(){};
-    
-    this.scrollStepsPageBackwards = function(){};
-    
-    this.scrollStepsPageForward = function(){};
-    
-    this.scrollStepsStepBackwards = function(){};
-    
-    this.scrollStepsStepForward = function(){};
+/**
+ * @returns RangedValue
+ */
+Clip.prototype.getAccent = function(){};
 
-    /**
-     * @param {int} key
-     */
-    this.scrollToKey = function(key){};
+/**
+ * @returns BooleanValue
+ */
+Clip.prototype.getShuffle = function(){};
 
-    /**
-     * @param {int} step
-     */
-    this.scrollToStep = function(step){};
+Clip.prototype.scrollKeysPageDown = function(){};
 
-    /**
-     * @param {int} x
-     * @param {int} y
-     * @param {boolean} clearCurrentSelection
-     */
-    this.selectStepContents = function(x, y, clearCurrentSelection){};
+Clip.prototype.scrollKeysPageUp = function(){};
 
-    /**
-     * @param {string} name
-     */
-    this.setName = function(name){};
+Clip.prototype.scrollKeysStepDown = function(){};
 
-    /**
-     * @param {int} x
-     * @param {int} y
-     * @param {int} insertVelocity
-     * @param {number} insertDuration
-     */
-    this.setStep = function(x, y, insertVelocity, insertDuration){};
+Clip.prototype.scrollKeysStepUp = function(){};
 
-    /**
-     * @param {number} lengthInBeatTime
-     */
-    this.setStepSize = function(lengthInBeatTime){};
+Clip.prototype.scrollStepsPageBackwards = function(){};
 
-    /**
-     * @param {int} x
-     * @param {int} y
-     * @param {int} insertVelocity
-     */
-    this.toggleStep = function(x, y, insertVelocity){};
-}
+Clip.prototype.scrollStepsPageForward = function(){};
+
+Clip.prototype.scrollStepsStepBackwards = function(){};
+
+Clip.prototype.scrollStepsStepForward = function(){};
+
+/**
+ * @param {int} key
+ */
+Clip.prototype.scrollToKey = function(key){};
+
+/**
+ * @param {int} step
+ */
+Clip.prototype.scrollToStep = function(step){};
+
+/**
+ * @param {int} x
+ * @param {int} y
+ * @param {boolean} clearCurrentSelection
+ */
+Clip.prototype.selectStepContents = function(x, y, clearCurrentSelection){};
+
+/**
+ * @param {string} name
+ */
+Clip.prototype.setName = function(name){};
+
+/**
+ * @param {int} x
+ * @param {int} y
+ * @param {int} insertVelocity
+ * @param {number} insertDuration
+ */
+Clip.prototype.setStep = function(x, y, insertVelocity, insertDuration){};
+
+/**
+ * @param {number} lengthInBeatTime
+ */
+Clip.prototype.setStepSize = function(lengthInBeatTime){};
+
+/**
+ * @param {int} x
+ * @param {int} y
+ * @param {int} insertVelocity
+ */
+Clip.prototype.toggleStep = function(x, y, insertVelocity){};

@@ -1,22 +1,22 @@
-function Arranger(){
-    /**
-     * @param {function} callback
-     */
-    this.addCueMarkerVisibilityObserver = function(callback){};
+function Arranger(){}
 
-    /**
-     * @param {function} callback
-     */
-    this.addPlaybackFollowObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Arranger.prototype.addCueMarkerVisibilityObserver = function(callback){};
 
-    /**
-     * @param {function} callback
-     */
-    this.addTrackRowHeightObserver = function(callback){};
+/**
+ * @param {function} callback
+ */
+Arranger.prototype.addPlaybackFollowObserver = function(callback){};
 
-    this.toggleCueMarkerVisibility = function(){};
+/**
+ * @param {function} callback
+ */
+Arranger.prototype.addTrackRowHeightObserver = function(callback){};
 
-    this.togglePlaybackFollow = function(){};
+Arranger.prototype.toggleCueMarkerVisibility = function(){};
 
-    this.toggleTrackRowHeight = function(){};
-}
+Arranger.prototype.togglePlaybackFollow = function(){};
+
+Arranger.prototype.toggleTrackRowHeight = function(){};
