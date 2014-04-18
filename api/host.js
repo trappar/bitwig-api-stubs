@@ -152,4 +152,69 @@ function host(){
      * @returns {int}
      */
     this.getHostApiVersion = function(){};
+
+    /**
+     * The product name of the host application.
+     * @returns {string}
+     */
+    this.getHostProduct = function(){};
+
+    /**
+     * The vendor of the host application.
+     * @returns {string}
+     */
+    this.getHostVendor = function(){};
+
+    /**
+     * The version number of the host application.
+     * @returns {string}
+     */
+    this.getHostVersion = function(){};
+
+    /**
+     * @param {int} index
+     * @returns {MidiIn}
+     * @throws com.bitwig.base.control_surface.ControlSurfaceException
+     */
+    this.getMidiInPort = function(index){};
+
+    /**
+     * @param {int} index
+     * @returns {MidiOut}
+     * @throws com.bitwig.base.control_surface.ControlSurfaceException
+     */
+    this.getMidiOutPort = function(index){};
+
+    /**
+     * @returns {boolean}
+     */
+    this.platformIsLinux = function(){};
+
+    /**
+     * @returns {boolean}
+     */
+    this.platformIsMac = function(){};
+
+    /**
+     * @returns {boolean}
+     */
+    this.platformIsWindows = function(){};
+
+    /**
+     * @param {string} s
+     */
+    this.println = function(s){};
+
+    /**
+     * @param {function} callback
+     * @param {string[]} args
+     * @param {int} delay
+     * @throws com.bitwig.base.control_surface.ControlSurfaceException
+     */
+    this.scheduleTask = function(callback, args, delay){};
+
+    /**
+     * @param {string} text
+     */
+    this.showPopupNotification = function(text){};
 }
