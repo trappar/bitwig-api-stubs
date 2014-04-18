@@ -1,4 +1,4 @@
-Bitwig Api Stubs
+Bitwig Javascript API Stubs
 ================
 
 A manual conversion of the Bitwig Control Surface Scripting API into javascript method stubs complete with JSDoc. If you're working on any controller scripts this should be super helpful to you!
