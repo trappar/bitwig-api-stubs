@@ -1,3 +1,1 @@
-function MidiOut(){
-
-}
+function MidiOut(){}

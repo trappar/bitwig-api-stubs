@@ -1,3 +1,1 @@
-function CursorDevice(){
-
-}
+function CursorDevice(){}

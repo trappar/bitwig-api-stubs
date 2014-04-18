@@ -1,3 +1,1 @@
-function Transport(){
-
-};
+function Transport(){};

@@ -1,3 +1,1 @@
-function TrackBank(){
-
-}
+function TrackBank(){}

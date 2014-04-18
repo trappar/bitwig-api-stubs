@@ -1,3 +1,1 @@
-function RemoteSocket(){
-
-}
+function RemoteSocket(){}
