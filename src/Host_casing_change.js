@@ -1,17 +1,15 @@
-//Notes: Annoyingly "host" must be lower cased rather than "Host" as the documentation says.
-
 /**
- * An interface representing the host application to the script.
+ * An interface representing the Host application to the script.
  * @global
  */
-function host(){}
+function Host(){}
 
 /**
  * Define that the controller can be discovered from the name of the midi in/out drivers.. Can be called (at the global scope) multiple times to define multiple driver names but is optional.
  * @param {string[]} inputs
  * @param {string[]} outputs
  */
-host.prototype.addDeviceNameBasedDiscoveryPair = function(inputs, outputs){};
+Host.prototype.addDeviceNameBasedDiscoveryPair = function(inputs, outputs){};
 
 /**
  * Connect to a remote TCP socket. The callback will receive a RemoteConnection instance on connection.
@@ -20,13 +18,13 @@ host.prototype.addDeviceNameBasedDiscoveryPair = function(inputs, outputs){};
  * @param {function} callback
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.connectToRemoteHost = function(host, port, callback){};
+Host.prototype.connectToRemoteHost = function(host, port, callback){};
 
 /**
  * @returns {Application}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createApplication = function(){
+Host.prototype.createApplication = function(){
     return new Application();
 };
 
@@ -35,27 +33,27 @@ host.prototype.createApplication = function(){
  * @returns {Arranger}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createArranger = function(screenIndex){};
+Host.prototype.createArranger = function(screenIndex){};
 
 /**
  * @param {int} gridWidth
  * @returns {Clip}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createCursorClip = function(gridWidth){};
+Host.prototype.createCursorClip = function(gridWidth){};
 
 /**
  * @returns {CursorDevice}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createCursorDevice = function(){};
+Host.prototype.createCursorDevice = function(){};
 
 /**
  * @param {int} numSends
  * @returns {CursorTrack}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createCursorTrack = function(numSends){};
+Host.prototype.createCursorTrack = function(numSends){};
 
 /**
  * @param {int} numTracks
@@ -63,13 +61,13 @@ host.prototype.createCursorTrack = function(numSends){};
  * @returns {TrackBank}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createEffectTrackBank = function(numTracks, numScenes){};
+Host.prototype.createEffectTrackBank = function(numTracks, numScenes){};
 
 /**
  * @returns {Groove}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createGroove = function(){};
+Host.prototype.createGroove = function(){};
 
 /**
  * @param {int} numTracks
@@ -78,14 +76,14 @@ host.prototype.createGroove = function(){};
  * @returns {TrackBank}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createMainTrackBank = function(numTracks, numSends, numScenes){};
+Host.prototype.createMainTrackBank = function(numTracks, numSends, numScenes){};
 
 /**
  * @param {int} numScenes
  * @returns {Track}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createMasterTrack = function(numScenes){};
+Host.prototype.createMasterTrack = function(numScenes){};
 
 /**
  * @param {string} perspective
@@ -93,15 +91,15 @@ host.prototype.createMasterTrack = function(numScenes){};
  * @returns {Mixer}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createMixer = function(perspective, screenIndex){};
+Host.prototype.createMixer = function(perspective, screenIndex){};
 
 /**
- * Opens a TCP host socket
+ * Opens a TCP Host socket
  * @param {string} name
  * @param {int} defaultPort
  * @returns {RemoteSocket}
  */
-host.prototype.createRemoteConnection = function(name, defaultPort){};
+Host.prototype.createRemoteConnection = function(name, defaultPort){};
 
 /**
  * @param {int} numTracks
@@ -110,20 +108,20 @@ host.prototype.createRemoteConnection = function(name, defaultPort){};
  * @returns {TrackBank}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createTrackBank = function(numTracks, numSends, numScenes){};
+Host.prototype.createTrackBank = function(numTracks, numSends, numScenes){};
 
 /**
  * @returns {Transport}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createTransport = function(){};
+Host.prototype.createTransport = function(){};
 
 /**
  * @param {int} numControllers
  * @returns {UserControlBank}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.createUserControls = function(numControllers){};
+Host.prototype.createUserControls = function(numControllers){};
 
 /**
  * Define the controller. Must be called at the global scope of the script
@@ -133,82 +131,82 @@ host.prototype.createUserControls = function(numControllers){};
  * @param {string} uuid
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.defineController = function(vendor, name, version, uuid){};
+Host.prototype.defineController = function(vendor, name, version, uuid){};
 
 /**
  * @param {int} numInports
  * @param {int} numOutports
  */
-host.prototype.defineMidiPorts = function(numInports, numOutports){};
+Host.prototype.defineMidiPorts = function(numInports, numOutports){};
 
 /**
  * Define the sysex "identity reply" message (if any) that the MIDI device sends after receiving the standard Identity Request (F0 7E 7F 06 01 F7) message Must be called at the global scope of the script, but is optional. Only applicable to scripts with 1 MIDI in and 1 MIDI out
  * @param {string} reply
  */
-host.prototype.defineSysexIdentityReply = function(reply){};
+Host.prototype.defineSysexIdentityReply = function(reply){};
 
 /**
  * @param {string} s
  */
-host.prototype.errorln = function(s){};
+Host.prototype.errorln = function(s){};
 
 /**
- * The highest supported API version of the host application.
+ * The highest supported API version of the Host application.
  * @returns {int}
  */
-host.prototype.getHostApiVersion = function(){};
+Host.prototype.getHostApiVersion = function(){};
 
 /**
- * The product name of the host application.
+ * The product name of the Host application.
  * @returns {string}
  */
-host.prototype.getHostProduct = function(){};
+Host.prototype.getHostProduct = function(){};
 
 /**
- * The vendor of the host application.
+ * The vendor of the Host application.
  * @returns {string}
  */
-host.prototype.getHostVendor = function(){};
+Host.prototype.getHostVendor = function(){};
 
 /**
- * The version number of the host application.
+ * The version number of the Host application.
  * @returns {string}
  */
-host.prototype.getHostVersion = function(){};
+Host.prototype.getHostVersion = function(){};
 
 /**
  * @param {int} index
  * @returns {MidiIn}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.getMidiInPort = function(index){};
+Host.prototype.getMidiInPort = function(index){};
 
 /**
  * @param {int} index
  * @returns {MidiOut}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.getMidiOutPort = function(index){};
+Host.prototype.getMidiOutPort = function(index){};
 
 /**
  * @returns {boolean}
  */
-host.prototype.platformIsLinux = function(){};
+Host.prototype.platformIsLinux = function(){};
 
 /**
  * @returns {boolean}
  */
-host.prototype.platformIsMac = function(){};
+Host.prototype.platformIsMac = function(){};
 
 /**
  * @returns {boolean}
  */
-host.prototype.platformIsWindows = function(){};
+Host.prototype.platformIsWindows = function(){};
 
 /**
  * @param {string} s
  */
-host.prototype.println = function(s){};
+Host.prototype.println = function(s){};
 
 /**
  * @param {function} callback
@@ -216,9 +214,11 @@ host.prototype.println = function(s){};
  * @param {int} delay
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
-host.prototype.scheduleTask = function(callback, args, delay){};
+Host.prototype.scheduleTask = function(callback, args, delay){};
 
 /**
  * @param {string} text
  */
-host.prototype.showPopupNotification = function(text){};
+Host.prototype.showPopupNotification = function(text){};
+
+host = new Host();
