@@ -42,10 +42,14 @@ TrackBank.prototype.addSceneScrollPositionObserver = function(callback, valueWhe
  */
 TrackBank.prototype.addTrackScrollPositionObserver = function(callback, valueWhenUnassigned){};
 
+/**
+ * @returns {ClipLauncherScenesOrSlots}
+ */
 TrackBank.prototype.getClipLauncherScenes = function(){};
 
 /**
  * @param {int} indexInBank
+ * @returns {Track}
  */
 TrackBank.prototype.getTrack = function(indexInBank){};
 

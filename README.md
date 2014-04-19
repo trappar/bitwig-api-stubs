@@ -35,3 +35,7 @@ Also, you may be wondering why a copy of the Bitwig Control Surface Scripting AP
 
 ### Known issues
 + The API documentation doesn't list when parameters are optional as far as I can tell, so I'm going to have to fix those as I find them.
+
+### Thanks
++ [TeotiGraphix](http://www.kvraudio.com/forum/memberlist.php?mode=viewprofile&u=295218) and [marvotron](http://www.kvraudio.com/forum/memberlist.php?mode=viewprofile&u=32234) for helping out with the enum parts!
++ The Bitwig team for actually releasing API documentation with their software! -nudge nudge- come on Ableton...
