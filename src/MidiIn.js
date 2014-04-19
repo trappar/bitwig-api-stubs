@@ -3,7 +3,7 @@ function MidiIn(){}
 /**
  * Defines a note input. Must be called within init() The messages matching the masks will be fed directly to the application, and not be processed through the script. If no filter is provided, a standard filter will be used to forward note-related messages on channel 1 (0).
  * @param {string} name
- * @param {string...} masks - formatted in hex with ? as wildcard. Example "80????" matches Note off on channel 1 (0)
+ * @param {string...=} masks - formatted in hex with ? as wildcard. Example "80????" matches Note off on channel 1 (0)
  * @returns {NoteInput}
  * @throws com.bitwig.base.control_surface.ControlSurfaceException
  */
