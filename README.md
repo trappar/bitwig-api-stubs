@@ -6,7 +6,10 @@ A manual conversion of the Bitwig Control Surface Scripting API into javascript 
 ### IMPORTANT!
 **This is not finished!** Some parts are missing. If you download this now, check back later to see if I've made more progress.
 
-**Report any issues with the bugs!** You can report them [here on GitHub](https://github.com/trappar/bitwig-api-stubs/issues) or on the KVRAudio forum on [this thread](http://www.kvraudio.com/forum/viewtopic.php?f=259&t=409513) or by [sending me a message directly](http://www.kvraudio.com/forum/ucp.php?i=pm&mode=compose&u=325394).
+**Report any issues you find!** Report issues however is easiest for you...
+ + [Here on GitHub](https://github.com/trappar/bitwig-api-stubs/issues)
+ + [This KVRAudio forum thread](http://www.kvraudio.com/forum/viewtopic.php?f=259&t=409513)
+ + [By PMing me on the KVRAudio forum](http://www.kvraudio.com/forum/ucp.php?i=pm&mode=compose&u=325394)
 
 ### Installation
 Click "Download Zip" on the right side of this page. Extract to any folder you like.
