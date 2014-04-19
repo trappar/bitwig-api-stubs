@@ -35,4 +35,4 @@ Also, you may be wondering why a copy of the Bitwig Control Surface Scripting AP
 
 ### Known issues
 + I haven't yet figured out how to stub NoteInput.NoteExpression, PrimaryDevice.DeviceType, or PrimaryDevice.ChainLocation. If you have any ideas I'd love to hear them.
-+ Also, the API documentation doesn't list when parameters are optional as far as I can tell, so I'm going to have to fix those as I find them.
++ The API documentation doesn't list when parameters are optional as far as I can tell, so I'm going to have to fix those as I find them.
