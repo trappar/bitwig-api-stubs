@@ -6,8 +6,6 @@ A manual conversion of the Bitwig Control Surface Scripting API into javascript 
 ![Example of code-completion in action](http://i.imgur.com/q7m2425.gif)
 
 ### IMPORTANT!
-**This is not finished!** Some parts are missing. If you download this now, check back later to see if I've made more progress. That said, even with the current omissions (detailed in the Known Issues section), what I've done so far is quite worth using.
-
 **Report any issues you find!** Report issues however is easiest for you...
 + [Here on GitHub](https://github.com/trappar/bitwig-api-stubs/issues)
 + [This KVRAudio forum thread](http://www.kvraudio.com/forum/viewtopic.php?f=259&t=409513)
@@ -36,5 +34,4 @@ Feel free to try using this in other IDEs/editors and let me know how well it wo
 Also, you may be wondering why a copy of the Bitwig Control Surface Scripting API doc files are included with this. It is so that when a new version comes out I can bring in those files and see what has changed. This way I can keep up-to-date with any changes that are made to the API!
 
 ### Known issues
-+ I haven't yet figured out how to stub NoteInput.NoteExpression, PrimaryDevice.DeviceType, or PrimaryDevice.ChainLocation. If you have any ideas I'd love to hear them.
 + The API documentation doesn't list when parameters are optional as far as I can tell, so I'm going to have to fix those as I find them.
