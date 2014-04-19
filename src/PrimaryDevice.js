@@ -21,10 +21,10 @@ PrimaryDevice.prototype.switchToDevice = function(deviceType, chainLocation){};
  * Chain Location enum.
  */
 PrimaryDevice.ChainLocation = {
-  FIRST:1,
-  LAST:2,
-  NEXT:3,
-  PREVIOUS:4
+    FIRST: 1,
+    LAST: 2,
+    NEXT: 3,
+    PREVIOUS: 4
 };
 
 /**
@@ -34,7 +34,7 @@ PrimaryDevice.ChainLocation = {
  * @throws IllegalArgumentException - if this enum type has no constant with the specified name
  * @throws NullPointerException - if the argument is null
  */
-PrimaryDevice.ChainLocation.valueOf = function(name) {};
+PrimaryDevice.ChainLocation.valueOf = function(name){};
 
 /**
  * Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
@@ -42,14 +42,14 @@ PrimaryDevice.ChainLocation.valueOf = function(name) {};
  *     System.out.println(c);
  * @returns an array containing the constants of this enum type, in the order they are declared
  */
-PrimaryDevice.ChainLocation.values = function() {};
+PrimaryDevice.ChainLocation.values = function(){};
 
 /**
  * Device Type enum.
  *
  */
 PrimaryDevice.DeviceType = {
-  ANY:1
+    ANY: 1
 };
 
 /**
@@ -59,7 +59,7 @@ PrimaryDevice.DeviceType = {
  * @throws IllegalArgumentException - if this enum type has no constant with the specified name
  * @throws NullPointerException - if the argument is null
  */
-PrimaryDevice.DeviceType.valueOf = function(name) {};
+PrimaryDevice.DeviceType.valueOf = function(name){};
 
 /**
  * Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
@@ -67,4 +67,4 @@ PrimaryDevice.DeviceType.valueOf = function(name) {};
  *     System.out.println(c);
  * @returns an array containing the constants of this enum type, in the order they are declared
  */
-PrimaryDevice.DeviceType.values = function() {};
+PrimaryDevice.DeviceType.values = function(){};
