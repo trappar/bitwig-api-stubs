@@ -4,7 +4,7 @@ Bitwig Javascript API Stubs
 A manual conversion of the Bitwig Control Surface Scripting API into javascript method stubs complete with JSDoc. If you're working on any controller scripts this should be super helpful to you!
 
 ### IMPORTANT!
-**This is not finished!** Some parts are missing. If you download this now, check back later to see if I've made more progress.
+**This is not finished!** Some parts are missing. If you download this now, check back later to see if I've made more progress. That said, even with the current omissions (detailed in the Known Issues section), what I've done so far is quite worth using.
 
 **Report any issues you find!** Report issues however is easiest for you...
 + [Here on GitHub](https://github.com/trappar/bitwig-api-stubs/issues)
