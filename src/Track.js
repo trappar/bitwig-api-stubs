@@ -78,6 +78,11 @@ Track.prototype.getIsMatrixQueuedForStop = function(){};
 Track.prototype.getIsMatrixStopped = function(){};
 
 /**
+ * @returns {Device}
+ */
+Track.prototype.getPrimaryDevice = function(){};
+
+/**
  * @param {int} index
  * @return {AutomatableRangedValue}
  */

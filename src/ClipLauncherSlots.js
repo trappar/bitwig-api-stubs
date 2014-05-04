@@ -28,7 +28,7 @@ ClipLauncherSlots.prototype.addIsPlayingObserver = function(callback){};
 ClipLauncherSlots.prototype.addIsQueuedObserver = function(callback){};
 
 /**
- * Add an observer if clip playback is queued on the slot.
+ * Add an observer if clip is recording on the slot.
  * @param {function} callback
  */
 ClipLauncherSlots.prototype.addIsRecordingObserver = function(callback){};

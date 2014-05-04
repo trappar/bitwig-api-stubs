@@ -47,12 +47,6 @@ Channel.prototype.getMute = function(){};
 Channel.prototype.getPan = function(){};
 
 /**
- * Get the first primary device of this track.
- * @returns {Device}
- */
-Channel.prototype.getPrimaryDevice = function(){};
-
-/**
  * @returns {AutomatableRangedValue}
  */
 Channel.prototype.getSend = function(index){};
