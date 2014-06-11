@@ -1,0 +1,281 @@
+/*
+Overall document style, !important overrides css in stylesheet.css
+*/
+
+body {
+  	background-color: #DCDCDC !important;
+  	color: #282828 !important;
+  	line-height: 1.5em;
+  	font-family: Helvetica, Arial, sans-serif !important;
+}
+
+h2
+h3 {
+	font-family: Helvetica, Arial, sans-serif !important;
+}
+h2 {
+	font-size: 1.8em !important;
+}
+h3 {
+    font-size: 1.5em !important;
+}
+a:link, a:visited {
+   	color:#E41F38 !important;
+}
+a:hover, a:focus {
+   	color:#E41F38 !important;
+}
+a:active {
+   	color:#E41F38 !important;
+}
+a[name] {
+    color:#E41F38 !important;
+}
+a[name]:hover {
+   	color:#E41F38 !important;
+}
+hr {
+	display: none;
+}
+/*
+List styles
+*/
+ul.blockList ul.blockList li.blockList, ul.blockList ul.blockListLast li.blockList {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 20px 5px 10px;
+}
+/*
+Navigation bar styles and Logo
+*/
+.bar:before {
+	content: url('bw_logo_header.svg');
+	display: block;
+	width: 100%;
+	margin-bottom: 36px;
+}
+.bar {
+	background: none !important;
+	border-bottom: 3px solid #E41F38;
+	color: #E41F38 !important;
+	height: 5.8em !important;
+	font-family: Helvetica, Arial, sans-serif !important;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.topNav,
+.bottomNav {
+	background: none !important;
+	border-bottom: 3px solid #E41F38;
+	padding: 1em 0 .2em 0 !important;
+	color: #E41F38 !important;
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, sans-serif !important;
+	font-size: 14px !important;
+	height: 4.9em !important;
+}
+.topNav ul.navList {
+	margin-top: 44px;
+}
+.navBarCell1Rev {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    color: #000 !important;
+    margin: 0 !important;
+}
+.bottomNav {
+	display: none;
+}
+.bottomNav + .subNav {
+	display: none;
+}
+.topNav a:link,
+.topNav a {
+	color: #E41F38 !important;
+}
+ul.navList {
+	margin-left: 15px !important;
+}
+ul.navList li {
+    padding: 0 6px !important;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
+.subNav {
+	border-bottom: 1px dotted #E41F38 !important;
+	background: none !important;
+	padding: 25px 0 15px 0;
+	margin-bottom: 15px;
+}
+ul.subNavList {
+   margin: 0 25px 0 15px !important;
+}
+/*
+Weirdo fix because links are not clickable with webfont
+*/
+.horizontal > li > a {
+	display: block;
+}
+.subNav .subNavList li a {
+	float: left;
+}
+.contentContainer ul li a {
+	display: inline-block;
+}
+.contentContainer > a {
+	float: left;
+	margin-right: 4px;
+}
+dl > dt > a {
+	display: inline-block;
+}
+dl > dt > .strong > a {
+	float: left;
+	margin-right: 4px;
+} 
+
+/*
+Page header and footer styles
+*/
+.title {
+    color: #E41F38 !important;
+}
+.legalCopy {
+	margin-left: 20px !important;
+}
+/*
+Table styles
+*/
+.contentContainer table,
+.classUseContainer table,
+.constantValuesContainer table {
+    border-bottom: 1px solid #fff !important;
+}
+.rowColor {
+    background-color:#c5c3c3 !important;
+}
+.altColor {
+	background-color:#d4d4d4 !important;
+}
+td.colOne a:link,
+td.colOne a:active,
+td.colOne a:visited,
+td.colOne a:hover,
+td.colFirst a:link,
+td.colFirst a:active,
+td.colFirst a:visited,
+td.colFirst a:hover,
+td.colLast a:link,
+td.colLast a:active,
+td.colLast a:visited,
+td.colLast a:hover,
+.constantValuesContainer td a:link,
+.constantValuesContainer td a:active,
+.constantValuesContainer td a:visited,
+.constantValuesContainer td a:hover {
+    color: #282828 !important;
+    text-decoration: underline;
+    display: block;
+}
+td.colFirst,
+th.colFirst {
+    border-left: 1px solid #fff !important;
+}
+td.colLast, th.colLast {
+    border-right: 1px solid #fff !important;
+}
+th.colFirst,
+th.colLast,
+th.colOne,
+.constantValuesContainer th {
+    border-top:1px solid #fff !important;
+    border-bottom:1px solid #fff !important;
+    border-right:1px solid #fff !important;
+    background-color: #BCBCBC !important;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+.overviewSummary td, 
+.packageSummary td, 
+.contentContainer ul.blockList li.blockList td, 
+.summary td, .classUseContainer td, 
+.constantValuesContainer td {
+    padding: 8px 3px 9px 7px !important;
+   	border-right: 1px solid #fff;
+}
+.overviewSummary caption span,
+.packageSummary caption span,
+.contentContainer ul.blockList li.blockList caption span,
+.summary caption span,
+.classUseContainer caption span,
+.constantValuesContainer caption span {
+   	background-image: none !important;
+    color: #282828 !important;
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+/*
+Heading styles
+*/
+ul.blockList li.blockList h2 {
+    padding: 20px 0 0 !important;
+}
+/*
+Page layout container styles
+*/
+.indexContainer {
+	margin: 60px 10px 10px !important;
+	font-size: 1.1em !important;
+}
+.indexContainer a {
+	display: block;
+}
+.contentContainer,
+.sourceContainer,
+.classUseContainer,
+.serializedFormContainer,
+.constantValuesContainer {
+    padding: 0 0 0 20px !important;
+}
+ul.blockList ul.blockList ul.blockList li.blockList h3 {
+   	background-color: transparent !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+ul.blockList ul.blockList li.blockList,
+ul.blockList ul.blockListLast li.blockList {
+   	padding: 0 20px 5px 0 !important;
+}
+ul.blockList ul.blockList ul.blockList li.blockList, 
+ul.blockList ul.blockList ul.blockListLast li.blockList {
+    border-right: none !important;
+    border-bottom: 1px dotted #E41F38 !important;
+    padding: 0 0 5px 8px;
+}
+div.details ul.blockList ul.blockList ul.blockList li.blockList h4,
+div.details ul.blockList ul.blockList ul.blockListLast li.blockList h4 {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    margin: 0 0 6px 0 !important;
+    padding: 2px 0 !important;
+}
+ul.blockList ul.blockList li.blockList, ul.blockList ul.blockListLast li.blockList {
+    background-color: #F9F9F9;
+    border: 1px solid #9EADC0;
+    padding: 0 20px 5px 0;
+}
+/*
+Formatting effect styles
+*/
+.block {
+    margin:3px 0 12px 0 !important;
+}
+
+
+
+
+
+
