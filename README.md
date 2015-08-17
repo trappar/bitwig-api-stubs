@@ -5,6 +5,10 @@ A manual conversion of the Bitwig Control Surface Scripting API into javascript 
 
 ![Example of code-completion in action](http://i.imgur.com/q7m2425.gif)
 
+## This repository is now deprecated!
+
+Bitwig comes bundled with method stubs based on this work as of [version 1.0.12](http://downloads.bitwig.com/Release-Notes-1.0.12.html). This repository is still up for historical purposes only.
+
 ### IMPORTANT!
 **Report any issues you find!** Report issues however is easiest for you...
 + [Here on GitHub](https://github.com/trappar/bitwig-api-stubs/issues)
